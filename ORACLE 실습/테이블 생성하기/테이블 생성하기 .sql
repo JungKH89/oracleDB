@@ -1,0 +1,14 @@
+-- 테이블 조회하기
+select * from tabs;
+
+-- 테이블 생성하기
+create table KOPO_PRODUCT_VOLUME
+(
+REGIONID    VARCHAR(20 BYTE),
+PRODUCTGROUP VARCHAR(20 BYTE),
+YEARWEEK    VARCHAR(6 BYTE),
+VOLUME      NUMBER
+);
+
+SELECT * FROM TABS;
+
