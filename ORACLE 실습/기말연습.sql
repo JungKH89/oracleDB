@@ -1,0 +1,16 @@
+SELECT
+    REPLACE(LPAD(CUSTOMERCODE, 10, '0')
+    ,SUBSTR(CUSTOMERCODE, -4), '****')
+    AS CUSTOMERCODE_SECRET
+    FROM KOPO_CUSTOMERDATA;
+    
+SELECT
+    CONCAT(
+        SUBSTR(
+            LPAD(CUSTOMERCODE, 10, '0'), 0, 6),'****'
+    ) AS CUSTOMERCODE_SECRET 
+    FROM KOPO_CUSTOMERDATA;
+
+
+select CONCAT(SUBSTR(LPAD(CUSTOMERCODE, 10, '0'),0, 6),'****'
+    ) from kopo_customerdata;

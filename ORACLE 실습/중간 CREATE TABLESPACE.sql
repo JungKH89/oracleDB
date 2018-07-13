@@ -1,0 +1,11 @@
+CREATE TABLESPACE kyunghwajung
+  DATAFILE '/home/oracle/kopo_tablespaces/kyunghwajung/kyunghwa' SIZE 512M
+  AUTOEXTEND ON NEXT 100M MAXSIZE UNLIMITED
+  SEGMENT SPACE MANAGEMENT AUTO;
+  
+  
+  
+CREATE USER kyunghwa
+    IDENTIFIED BY kyunghwa
+    DEFAULT TABLESPACE   kyunghwajung
+    TEMPORARY TABLESPACE TEMP;
